@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head> <title>Формы</title> </head> 
+ <body  bgcolor="beige"  vlink="sienna"> 
+    <td align="left"bgcolor="saddlebrown" > <p><a href="kausari.html">Регистрация</a></p></td>
+    <div class="form-overlay" id="formOverlay">
+        <div class="form-container">
+            <h2>Регистрация</h2>
+<style>button {
+    cursor: pointer;
+    padding: 20px 20px;
+    height: 15px;
+    color: black;
+    background:khaki;
+    border: none;
+    text-transform: uppercase;
+    font-size: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.82);
+}
+
+button:hover {
+    opacity: 88;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+</style>
+<a href="index.html">О Египте</a> 
+
+
+
+            <from action="index.html" method="post". id="registrationForm">
+ <form action="https://api.web3forms.com/submit" method="post". id="registrationForm"> 
+    <input type="hidden" name="access_key" value="3f46a790-4f54-4a6b-9fab-66a62b7e8744">
+ <br>Напишите свое имя:<input type="text"> 
+ <br>Напишите пароль:<input type="password" maxlength="10"> 
+ <br>Выберите дату рождения:<input type="date" >
+ <br>Напишите свою почту:<input type="email" >
+     <br>   <p>Кем вы были в Египте прошлой жизни?</p>
+        
+        <div class="radio-group">
+            
+            <label>
+         <br>       <input type="radio" name="subject" value="Бог" checked> Бог
+            </label>
+            
+            <label>
+         <br>       <input type="radio" name="subject" value="Фараон"> Фараон
+            </label>
+            
+            <label>
+         <br>       <input type="radio" name="subject" value="Маг"> Маг
+            </label>
+            
+            <label>
+            <br>    <input type="radio" name="subject" value="Простолюдин"> Простолюдин            </label>
+            
+            <label>
+              <br>  <input type="radio" name="subject" value="раб"> Раб
+            </label>
+        </div>
+
+  <br><label for="answer">Что интересует вас в Египте?</label>
+        <textarea id="answer" name="answer" rows="4" cols="60">????</textarea>
+
+        <br>    <button type="reset">Очистить форму</button>
+
+
+
+
+<br> <p> <button type="submit" value="Отправить"> Отправить</button>
+ </form> 
+</div>
+
+
+ </body> 
+</html>

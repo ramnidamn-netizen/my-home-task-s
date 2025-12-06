@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Древние города Египта (Фильтр)</title>
+    
+    <style>
+         sans-serif; padding-top: 60px; }
+        .container { width: 90%; margin: 0 auto; padding: 20px; }
+        .title { font-size: 2em; margin-bottom: 20px; color: #333; }
+        
+        
+        .top-menu {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            background-color: rgb(165, 28, 30); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
+            display: flex; justify-content: space-around; align-items: center; padding: 10px 0;
+        }
+        .top-menu a {
+            color: beige; text-decoration: none; padding: 8px 15px;
+            border-radius: 5px; font-size: 16px; font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s; margin: 0;
+        }
+        .top-menu a:hover {
+            background-color: chocolate; color: beige; transform: scale(1.05);
+        }
+
+        
+        .ul_list { list-style: none; padding: 0; margin: 20px 0; display: flex; gap: 15px; border-bottom: 2px solid #ccc; }
+        .list_item { 
+            padding: 10px 15px; background-color: #eee; border-radius: 5px 5px 0 0; 
+            cursor: pointer; font-weight: bold; transition: background-color 0.2s; color: #333;
+        }
+        .list_item:hover { background-color: #ddd; }
+        .list_item.active { background-color: rgb(165, 28, 30); color: white; }
+        
+       
+        .blocks_row { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+        .blocks_item {
+            width: 23%; 
+            min-width: 150px; height: 150px; display: flex; justify-content: center; 
+            align-items: center; color: white; font-size: 1.1em; font-weight: bold; 
+            text-shadow: 1px 1px 3px black; border-radius: 8px; transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+</style>
+  <style>
+.summer1 { background-image: url('summer1.jpg'); background-size: cover; background-position: center; }
+.summer2 { background-image: url('summer2.jpg'); background-size: cover; background-position: center; }
+.summer3 { background-image: url('summer3.jpg'); background-size: cover; background-position: center; }
+
+.autumn1 { background-image: url('autumn1.jpg'); background-size: cover; background-position: center; }
+.autumn2 { background-image: url('autumn2.jpg'); background-size: cover; background-position: center; }
+.autumn3 { background-image: url('autumn3.jpg'); background-size: cover; background-position: center; }
+
+.winter1 { background-image: url('winter1.jpg'); background-size: cover; background-position: center; }
+.winter2 { background-image: url('winter2.jpg'); background-size: cover; background-position: center; }
+.winter3 { background-image: url('winter3.jpg'); background-size: cover; background-position: center; }
+
+.spring1 { background-image: url('spring1.jpg'); background-size: cover; background-position: center; }
+.spring2 { background-image: url('spring2.jpg'); background-size: cover; background-position: center; }
+.spring3 { background-image: url('spring3.jpg'); background-size: cover; background-position: center; }
+
+
+
+
+
+</style>
+</head>
+<body bgcolor="beige" text="saddlebrown" link="chocolate" alink="darkorange" vlink="sienna">
+    
+    <header>
+        <nav class="top-menu">
+            <a href="index.html">О Египте</a>
+            <a href="pyta.html">Пирамиды</a>
+            <a href="dogs.html">Боги</a>
+            <a href="interesint.html">Культура</a>
+            <a href="movie.html">Фильмы</a>
+            <a href="table.html">Таблица</a>
+            <a href="multi.html">Мультфильмы</a>
+            <a href="aboutvideos.html">Видео</a>
+            <a href="jennie.html">Города</a>
+             <a href="geoni.html">Иероглифы</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">Древние города в Египте </div>
+            <ul class="ul_list">
+                <li class="list_item active" data-id="all">Все</li>
+                <li class="list_item" data-id="winter">ЛУКСОР</li>
+                <li class="list_item" data-id="spring">ФИВЫ</li>
+                <li class="list_item" data-id="summer">АБИДОС</li>
+                <li class="list_item" data-id="autumn">МЕМФИС</li>
+            </ul>
+            
+            <div class="blocks">
+                <div class="blocks_row">
+                    <div class="blocks_item summer1"><span>АБИДОС</span></div>
+                    <div class="blocks_item autumn1"><span>МЕМФИС</span></div>
+                    <div class="blocks_item winter1"><span>ЛУКСОР</span></div>
+                    <div class="blocks_item spring1"><span>ФИВЫ</span></div>
+                </div>
+<div class="blocks_row">
+                    <div class="blocks_item winter2"><span>ЛУКСОР</span></div>
+                    <div class="blocks_item autumn2"><span>МЕМФИС</span></div>
+                    <div class="blocks_item summer2"><span>АБИДОС</span></div>
+                    <div class="blocks_item spring2"><span>ФИВЫ</span></div>
+                </div>
+
+                <div class="blocks_row">
+                    <div class="blocks_item spring3"><span>ФИВЫ</span></div>
+                    <div class="blocks_item summer3"><span>АБИДОС</span></div>
+                    <div class="blocks_item autumn3"><span>МЕМФИС</span></div>
+                    <div class="blocks_item winter3"><span>ЛУКСОР</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
